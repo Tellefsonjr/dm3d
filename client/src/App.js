@@ -8,6 +8,8 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import Builder from './components/Builder';
 import Browse from './components/Browse';
+import Footer from './components/Footer';
+
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -22,6 +24,7 @@ function App() {
           <Route path="/encounter-builder" component={ Builder } />
           <Route path="/browse" component={ Browse } />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
